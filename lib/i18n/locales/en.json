@@ -1,0 +1,87 @@
+{
+  "risk_assessment": {
+    "title": "Risk Assessment",
+    "description": "Answer these questions so we can determine your risk profile and recommend the most suitable asset allocation.",
+    "your_risk_profile": "Your Risk Profile",
+    "info_message": "Your risk profile will help us recommend an asset allocation that's more suitable for your investment goals."
+  },
+  "question": {
+    "risk_assessment": {
+      "time_horizon": "What is your investment time horizon?",
+      "market_decline": "If your investments lost 20% of their value in 3 months, what would you do?",
+      "investment_knowledge": "How would you describe your level of investment knowledge?",
+      "income_stability": "How would you rate the stability of your income?",
+      "financial_goals": "What is your main financial goal with this investment?"
+    }
+  },
+  "option": {
+    "risk_assessment": {
+      "time_horizon": {
+        "less_than_1_year": "Less than 1 year",
+        "1_to_3_years": "1-3 years",
+        "3_to_5_years": "3-5 years",
+        "5_to_10_years": "5-10 years",
+        "more_than_10_years": "More than 10 years"
+      },
+      "market_decline": {
+        "sell_all": "Sell everything to avoid further losses",
+        "sell_some": "Sell some of my investments",
+        "do_nothing": "Do nothing and wait for recovery",
+        "buy_some_more": "Buy a little more to take advantage of low prices",
+        "buy_significantly_more": "Buy much more to take advantage of the opportunity"
+      },
+      "investment_knowledge": {
+        "none": "None - I'm a beginner at investing",
+        "limited": "Limited - I have basic knowledge",
+        "good": "Good - I understand fundamental concepts",
+        "extensive": "Extensive - I have experience investing regularly",
+        "professional": "Professional - I work or have worked in finance"
+      },
+      "income_stability": {
+        "very_unstable": "Very unstable - Varies significantly month to month",
+        "somewhat_unstable": "Somewhat unstable - May vary from month to month",
+        "average": "Average - Generally stable with some variations",
+        "stable": "Stable - Predictable regular income",
+        "very_stable": "Very stable - Completely secured income long-term"
+      },
+      "financial_goals": {
+        "preserve_capital": "Preserve capital - Minimize risks at all costs",
+        "income_generation": "Generate income - Obtain regular dividends or yields",
+        "balanced_growth": "Balanced growth - Balance between safety and returns",
+        "growth": "Growth - Focus on long-term capital appreciation",
+        "aggressive_growth": "Aggressive growth - Maximize returns by taking high risks"
+      }
+    }
+  },
+  "help": {
+    "risk_assessment": {
+      "time_horizon": "Your time horizon directly affects the investment strategy. With more time, you can take more risk.",
+      "market_decline": "Your reaction to market downturns indicates your real risk tolerance.",
+      "investment_knowledge": "Greater knowledge means better ability to evaluate and manage risky investments.",
+      "income_stability": "Your income stability determines your ability to maintain investments during volatile periods.",
+      "financial_goals": "Different goals require different strategies and risk levels."
+    }
+  },
+  "profile": {
+    "conservative": {
+      "title": "Conservative Profile",
+      "description": "You prefer safety and stability in your investments, even if this means more modest returns."
+    },
+    "moderate": {
+      "title": "Moderate Profile",
+      "description": "You seek a balance between safety and growth, with controlled risk."
+    },
+    "balanced": {
+      "title": "Balanced Profile",
+      "description": "You are comfortable with a medium level of risk in search of above-average returns."
+    },
+    "growth": {
+      "title": "Growth Profile",
+      "description": "You are willing to accept greater volatility in exchange for higher growth potential."
+    },
+    "aggressive": {
+      "title": "Aggressive Profile",
+      "description": "You seek to maximize returns and are willing to take significant risks to achieve them."
+    }
+  }
+} 

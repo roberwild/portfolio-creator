@@ -1,0 +1,87 @@
+{
+  "risk_assessment": {
+    "title": "Evaluación de riesgo",
+    "description": "Responde estas preguntas para que podamos determinar tu perfil de riesgo y recomendarte la distribución de activos más adecuada.",
+    "your_risk_profile": "Tu perfil de riesgo",
+    "info_message": "Tu perfil de riesgo nos ayudará a recomendarte una distribución de activos más adecuada para tus objetivos de inversión."
+  },
+  "question": {
+    "risk_assessment": {
+      "time_horizon": "¿Cuál es tu horizonte temporal de inversión?",
+      "market_decline": "Si tus inversiones perdieran un 20% de su valor en 3 meses, ¿qué harías?",
+      "investment_knowledge": "¿Cómo describirías tu nivel de conocimiento sobre inversiones?",
+      "income_stability": "¿Cómo calificarías la estabilidad de tus ingresos?",
+      "financial_goals": "¿Cuál es tu principal objetivo financiero con esta inversión?"
+    }
+  },
+  "option": {
+    "risk_assessment": {
+      "time_horizon": {
+        "less_than_1_year": "Menos de 1 año",
+        "1_to_3_years": "1-3 años",
+        "3_to_5_years": "3-5 años",
+        "5_to_10_years": "5-10 años",
+        "more_than_10_years": "Más de 10 años"
+      },
+      "market_decline": {
+        "sell_all": "Vender todo para evitar más pérdidas",
+        "sell_some": "Vender parte de mis inversiones",
+        "do_nothing": "No hacer nada y esperar a que se recupere",
+        "buy_some_more": "Comprar un poco más aprovechando los precios bajos",
+        "buy_significantly_more": "Comprar mucho más para aprovechar la oportunidad"
+      },
+      "investment_knowledge": {
+        "none": "Ninguno - Soy principiante en inversiones",
+        "limited": "Limitado - Tengo conocimientos básicos",
+        "good": "Bueno - Entiendo los conceptos fundamentales",
+        "extensive": "Extenso - Tengo experiencia invirtiendo regularmente",
+        "professional": "Profesional - Trabajo o he trabajado en el sector financiero"
+      },
+      "income_stability": {
+        "very_unstable": "Muy inestable - Varía significativamente mes a mes",
+        "somewhat_unstable": "Algo inestable - Puede variar de un mes a otro",
+        "average": "Promedio - Generalmente estable con algunas variaciones",
+        "stable": "Estable - Ingresos regulares previsibles",
+        "very_stable": "Muy estable - Ingresos completamente asegurados a largo plazo"
+      },
+      "financial_goals": {
+        "preserve_capital": "Preservar capital - Minimizar riesgos a toda costa",
+        "income_generation": "Generar ingresos - Obtener dividendos o rendimientos regulares",
+        "balanced_growth": "Crecimiento equilibrado - Balance entre seguridad y rendimiento",
+        "growth": "Crecimiento - Enfoque en apreciación del capital a largo plazo",
+        "aggressive_growth": "Crecimiento agresivo - Maximizar rendimientos asumiendo altos riesgos"
+      }
+    }
+  },
+  "help": {
+    "risk_assessment": {
+      "time_horizon": "Tu horizonte temporal afecta directamente a la estrategia de inversión. Con más tiempo, puedes asumir más riesgo.",
+      "market_decline": "Tu reacción ante las caídas del mercado indica tu tolerancia real al riesgo.",
+      "investment_knowledge": "A mayor conocimiento, mejor capacidad para evaluar y gestionar inversiones con riesgo.",
+      "income_stability": "La estabilidad de tus ingresos determina la capacidad para mantener inversiones durante periodos volátiles.",
+      "financial_goals": "Diferentes objetivos requieren diferentes estrategias y niveles de riesgo."
+    }
+  },
+  "profile": {
+    "conservative": {
+      "title": "Perfil Conservador",
+      "description": "Prefieres la seguridad y estabilidad en tus inversiones, incluso si esto significa retornos más modestos."
+    },
+    "moderate": {
+      "title": "Perfil Moderado",
+      "description": "Buscas un equilibrio entre seguridad y crecimiento, con riesgo controlado."
+    },
+    "balanced": {
+      "title": "Perfil Equilibrado",
+      "description": "Te sientes cómodo con un nivel medio de riesgo en busca de rendimientos superiores al promedio."
+    },
+    "growth": {
+      "title": "Perfil de Crecimiento",
+      "description": "Estás dispuesto a aceptar mayor volatilidad a cambio de un potencial de crecimiento más alto."
+    },
+    "aggressive": {
+      "title": "Perfil Agresivo",
+      "description": "Buscas maximizar retornos y estás dispuesto a asumir riesgos significativos para lograrlo."
+    }
+  }
+} 

@@ -1,0 +1,303 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Definitions */
+@font-face {
+  font-family: 'lynstonelight';
+  src: url('/fonts/Lynstone-Light.woff2') format('woff2'),
+       url('/fonts/Lynstone-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lynstone';
+  src: url('/fonts/Lynstone-Book.woff2') format('woff2'),
+       url('/fonts/Lynstone-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lynstonebold';
+  src: url('/fonts/Lynstone-SemiBold.woff2') format('woff2'),
+       url('/fonts/Lynstone-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    
+    /* Customized brand color - Red (#c63527) in HSL: 5 67% 46% */
+    --primary: 5 67% 46%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 28% 35%;
+    --accent: 210 40% 90%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 5 67% 46%;
+    --radius: 0.25rem;
+    --chart-1: 5 67% 46%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 222 47% 25%;
+    --sidebar-primary: 5 67% 46%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 95%;
+    --sidebar-accent-foreground: 222 47% 20%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 5 67% 46%;
+    
+    /* Brand colors as direct variables */
+    --brand-red: #c63527;
+    --brand-dark: #333333;
+    --brand-gray: #999999;
+    --brand-light-gray: #ededed;
+  }
+
+  .dark {
+    --background: 222 47% 5%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 7%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 7%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Maintain brand red but slightly brighter for dark mode */
+    --primary: 5 67% 52%; 
+    --primary-foreground: 222 47% 1.2%;
+    
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 75.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 5 67% 52%;
+    --chart-1: 5 67% 52%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 222 47% 7%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 5 67% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 5 67% 52%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'lynstonelight', sans-serif;
+    font-weight: 400;
+  }
+  
+  strong, b {
+    font-family: 'lynstonebold', Arial, sans-serif;
+    font-weight: 600;
+  }
+  
+  a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  /* Override base link styles for buttons */
+  a.btn,
+  button a,
+  .button a,
+  a[role="button"],
+  .btn a,
+  nav a,
+  header a,
+  [class*="sign"],
+  [class*="Sign"],
+  a[href*="sign"],
+  a[href*="Sign"] {
+    text-decoration: none !important;
+  }
+  
+  a.btn:hover,
+  button a:hover,
+  .button a:hover,
+  a[role="button"]:hover,
+  .btn a:hover,
+  nav a:hover,
+  header a:hover,
+  [class*="sign"]:hover,
+  [class*="Sign"]:hover,
+  a[href*="sign"]:hover,
+  a[href*="Sign"]:hover {
+    text-decoration: none !important;
+  }
+  
+  blockquote {
+    font-family: 'lynstonelight', sans-serif;
+    font-style: italic;
+    padding-left: 2rem;
+    border-left: 3px solid hsl(var(--primary));
+    margin: 2rem 0;
+  }
+}
+
+/* Estilo para botones con mejor efecto hover */
+@layer components {
+  .btn-hover-effect {
+    @apply transition-all duration-200 hover:shadow-md hover:translate-y-[-2px];
+  }
+  
+  /* Mejoras para tarjetas y contenedores */
+  .card-enhanced {
+    @apply shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+  
+  /* Clase para textos con mejor contraste */
+  .text-high-contrast {
+    @apply text-secondary-foreground font-medium;
+  }
+  
+  /* Remove underlines from text in buttons */
+  button a, 
+  .button a,
+  a[role="button"],
+  button, 
+  .btn,
+  .btn a,
+  button span,
+  .button span,
+  a.btn {
+    text-decoration: none !important;
+  }
+  
+  /* Also remove hover underlines */
+  button:hover a,
+  .button:hover a,
+  a[role="button"]:hover,
+  button:hover, 
+  .btn:hover,
+  a.btn:hover {
+    text-decoration: none !important;
+  }
+  
+  /* Additional overrides for links that might have default browser styling */
+  a.button,
+  a.btn,
+  a[role="button"] {
+    display: inline-block;
+    text-decoration: none !important;
+  }
+  
+  /* Brand-specific typography utility classes */
+  .text-brand-red {
+    color: var(--brand-red);
+  }
+  
+  .text-brand-gray {
+    color: var(--brand-gray);
+  }
+  
+  .text-brand-dark {
+    color: var(--brand-dark);
+  }
+  
+  .bg-brand-red {
+    background-color: var(--brand-red);
+  }
+  
+  .bg-brand-light-gray {
+    background-color: var(--brand-light-gray);
+  }
+  
+  .font-lynstone {
+    font-family: 'lynstone', sans-serif;
+  }
+  
+  .font-lynstone-light {
+    font-family: 'lynstonelight', sans-serif;
+  }
+  
+  .font-lynstone-bold {
+    font-family: 'lynstonebold', sans-serif;
+  }
+  
+  /* Special typography classes */
+  .title-lg {
+    font-family: 'lynstonelight', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .title-md {
+    font-family: 'lynstonelight', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  
+  .title-sm {
+    font-family: 'lynstonelight', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+  
+  .subtitle {
+    font-family: 'lynstone', sans-serif;
+    color: var(--brand-gray);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+@layer utilities {
+  /* Global no-underline utility for UI elements */
+  .nav-link,
+  button a,
+  a.button,
+  a.btn,
+  a:has(button),
+  header a,
+  nav a,
+  a[href*="portfolio"] {
+    text-decoration: none !important;
+  }
+}
