@@ -1,0 +1,5 @@
+[33mcommit 2c8439935d09930c85599a8b23e294fb6285050b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Roberto Gutiérrez Mourente <roberto.gutierrez@singularbank.es>
+Date:   Wed Apr 2 14:31:50 2025 +0200
+
+    Remove react-day-picker dependency and create simplified Calendar component
